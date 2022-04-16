@@ -1,0 +1,63 @@
+.header{
+    background-color: chocolate;
+    height : 1.5em;
+    color:bisque;
+    font-size: 250%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+}
+.framePic{
+    width: 25%;
+    height:25vw;
+    background-color: chocolate;
+    padding: 2%;
+    border-radius:20px 20px 0 0 ;
+    margin-left: 65%;
+    position: absolute;
+}
+.dogPic{
+    width:100%;
+    height: 80%;
+    border-radius: 20px;
+    margin-bottom:5%;
+}
+.btn{
+    border-style: hidden;
+    border-radius: 4px;
+    /* width: 100%; */
+    font-size: 1.2em;
+    color: white;
+    background-color: chocolate;
+}
+.btn:hover{
+    background-color: white;
+    color:chocolate;
+    border-color: chocolate;
+    border-style: double;
+}
+.btn:active{
+color: white;
+background-color: chocolate;
+}
+
+.clear{
+    border-style: hidden;
+    border-radius: 4px;
+    width: 10%;
+    font-size: 1.2em;
+    color: white;
+    background-color: transparent;
+}
+.cardListSub{
+    text-transform: capitalize;
+    background-color: chocolate;
+    width: 20vw;
+    padding : 10px 5px 5px 5px ;
+    border-radius: 20px;
+}
+.listsub{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
