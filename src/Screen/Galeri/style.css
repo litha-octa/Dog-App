@@ -8,3 +8,14 @@
     border-radius: 10px;
     font-weight: bold;
 }
+
+.imgSubRndm{
+    background-color: chocolate;
+    display: flex;
+    flex-direction: row;
+}
+.itemSubImg{
+    width: 90%;
+    height: 90%;
+    margin:5% 0 0 4%; 
+}
