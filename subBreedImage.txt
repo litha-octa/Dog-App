@@ -1,0 +1,35 @@
+const [imgSub, setImgSub] = useState([]);
+const [imgSubRndm, setImgSubRndm] = useState([]);
+
+const imgSubApi = "https://dog.ceo/api/breed/hound/${param}/images";
+const imgSubRndmApi = "https://dog.ceo/api/breed/hound/${param}/images/random/${param}";
+
+const getSubPic = (param) => {
+    axios
+      .get(imgSubApi)
+      .then((res) => {
+        console.log(res.data);
+        setImgSub(res.data.message);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+};
+
+const getSubRndmPic = (param) => {
+    axios
+      .get(imgSubRndmApi)
+      .then((res) => {
+        console.log(res.data);
+        setImgSubRndm(res.data.message);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+};
+
+
+*imgSubApi = adalah API untuk menampilkan semua foto sub-Breed
+*imgSubRndmApi = adalah API menampilkan foto random dari sub-Breed.
+		Param terakhir diisi dengan angka,
+		menampilkan jumlah foto yang akan ditampilkan

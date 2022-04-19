@@ -1,0 +1,62 @@
+install component : npm i --save react-select
+import : import Select from 'react-select'
+
+const [imgBreed, setImgBreed] = useState([]);
+const[breedList, setBreedList ] = useState({});
+
+const options = [
+ 	{ value: 'affenpinscher', label: 'Affenpinscher' },
+  	{ value: 'african', label: 'African' },
+ 	{ value: 'airedale', label: 'Airedale' },
+ 	{ value: 'akita', label: 'Akita' },
+	{ value: 'appenzeller', label: 'Appenzeller' },
+	{ value: 'australian', label: 'Australian' },
+	{ value: 'basenji', label: 'Basenji' },
+	{ value: 'beagle', label: 'Beagle' },
+	{ value: 'bluetick', label: 'Bluetick' },
+	{ value: 'borzoi', label: 'Borzoi' },
+	{ value: 'bouvier', label: 'Bouvier' },
+	{ value: 'boxer', label: 'Boxer' },
+	{ value: 'brabancon', label: 'Brabancon' },
+	{ value: 'briard', label: 'Briard' },
+	{ value: 'buhund', label: 'Buhund' },
+	{ value: 'norwegian', label: 'Norwegian' },
+]
+
+const MyComponent = () => (
+  <Select options={options} />
+)
+
+const imgBreedApi=
+'https://dog.ceo/api/breed/${param}/images/random';
+
+const breedListApi=
+'https://dog.ceo/api/breeds/list/all';
+
+const getBreedPic = (param) => {
+    axios
+      .get(imgBreedApi)
+      .then((res) => {
+        console.log(res.data);
+        setImgBreed(res.data.message);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+};
+
+const getBreedList = (param) => {
+    axios
+      .get(breedListApi)
+      .then((res) => {
+        console.log(res.data);
+        setBreedList(res.data.message);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+};
+
+
+
+
