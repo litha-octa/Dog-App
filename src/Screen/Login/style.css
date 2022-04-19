@@ -1,11 +1,12 @@
 .header{
     background-color: chocolate;
-    height : 1.5em;
+    height : 11%;
     color:bisque;
-    font-size: 250%;
+    font-size: 3vw;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     border-radius: 10px;
+    font-weight: bold;
 }
 .framePic{
     width: 25%;
@@ -26,7 +27,8 @@
     border-style: hidden;
     border-radius: 4px;
     /* width: 100%; */
-    font-size: 1.2em;
+    font-size: 1.2vw;
+    font-weight: bold;
     color: white;
     background-color: chocolate;
 }
@@ -53,11 +55,33 @@ background-color: chocolate;
     text-transform: capitalize;
     background-color: chocolate;
     width: 20vw;
-    padding : 10px 5px 5px 5px ;
+    padding : 10px 5px 5px 10px ;
     border-radius: 20px;
 }
-.listsub{
+.captionList{
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-bottom: 4%;
+}
+.subBreedsItem{
+    background-color: transparent;
+    border-style: none;
+    text-decoration: underline;
+    color : beige;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 2%;
+    width :90%;
+    text-align: left;
+    border-radius: 5px;
+}
+.subBreedsItem:hover {
+    background-color: beige;
+    border-style: none;
+    text-decoration: underline;
+    color: chocolate;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 2%;
 }

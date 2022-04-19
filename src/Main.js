@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Route, HashRouter } from "react-router-dom";
 
 import Login from "./Screen/Login";
-import Home from "./Screen/Home";
+import Galeri from "./Screen/Galeri";
 
 
 
@@ -13,7 +13,7 @@ class Main extends Component {
         <div>
           <div className="content">
             <Route exact path="/" component={Login} />
-            <Route path="/Home" component={Home} />
+            <Route path="/Galeri" component={Galeri} />
           </div>
         </div>
       </HashRouter>

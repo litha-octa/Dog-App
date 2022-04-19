@@ -8,7 +8,6 @@ function Login() {
   const subBreeds = "https://dog.ceo/api/breed/hound/list";
   const [img, setImg] = useState("");
   const [listSubBreeds, setListSubBreeds] = useState([]);
-  const [list, setList] = useState("");
 
   const getRandomPic = () => {
     axios
@@ -45,7 +44,6 @@ function Login() {
   return (
     <div>
       <div className="header">Welcome to Happy Puppy</div>
-      <Link to="/Home">Search puppies !</Link>
       <br />
       <div className="framePic">
         <img src={img} alt="dogPic" className="dogPic" />
@@ -56,10 +54,10 @@ function Login() {
       </div>
       <br />
       <div className="cardListSub">
-        <div className="listsub">
+        <div className="captionList">
           <button onClick={listSub} className="btn">
             See All Sub-Breeds &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
           </button>
           <button onClick={clear} className="btn">
             X
@@ -68,11 +66,14 @@ function Login() {
         <div>
           {listSubBreeds.map((elements, index) => (
             <div>
-              {index + 1}.{elements}
+              <div className="subBreedsItem">
+                {index + 1}. {elements}
+              </div>
             </div>
           ))}
         </div>
       </div>
+      <Link to="/Galeri">galeri</Link>
     </div>
   );
 }

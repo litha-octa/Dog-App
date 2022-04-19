@@ -1,0 +1,10 @@
+.title{
+    background-color: chocolate;
+    height: 11%;
+    color: bisque;
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
