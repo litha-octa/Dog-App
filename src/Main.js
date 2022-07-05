@@ -7,6 +7,9 @@ import Galeri from "./Screen/Galeri";
 
 
 class Main extends Component {
+  componentDidUpdate(){
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <HashRouter onUpdate={() => window.scrollTo(0,0)}>
