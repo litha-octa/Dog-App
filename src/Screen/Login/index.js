@@ -96,10 +96,11 @@ function Login() {
               </div>
             )}
           </div>
-          <div>
-          </div>
+          <div></div>
         </div>
-        <Link to="/Galeri">galeri</Link>
+          <Link to="/Galeri" className="linkToGallery">
+            Go To Galeri
+          </Link>
       </div>
     </div>
   );
