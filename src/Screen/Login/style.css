@@ -111,7 +111,7 @@ background-color: chocolate;
     font-size: 30px;
 }
 
-@media only screen and (max-width : 600px){
+@media only screen and (max-width : 630px){
 .body {
         height: 100%;
         width: 100%;
