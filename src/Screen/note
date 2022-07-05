@@ -1,0 +1,22 @@
+ const [imgSub, setImgSub] = useState([]);
+ const imgSubApi = `https://dog.ceo/api/breed/hound/afghan/images`;
+ function imgApi(param) {
+   axios
+     .get(`https://dog.ceo/api/breed/hound/${param}/images`)
+     .then((res) => {
+       console.log(res.data);
+       setImgSub(res.data.message);
+     })
+     .catch((err) => {
+       console.log(err);
+     });
+ }
+
+ {
+   imgSub === 0 ? (
+     <div>text</div>
+   ) : (
+     <img src={imgSub[5]} alt="dogPic" className="dogPic" />
+   );
+ }
+<button onClick={() => imgApi("afghan")}>kllik</button>

@@ -1,9 +1,9 @@
 .title{
-    background-color: chocolate;
+    background-color: burlywood;
     height: 11%;
-    color: bisque;
+    color: black;
     font-size: 3vw;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     border-radius: 10px;
     font-weight: bold;
@@ -13,9 +13,25 @@
     background-color: chocolate;
     display: flex;
     flex-direction: row;
+    height: min-content;
+    
+}
+.columnMax{
+    rows: 4 auto;
+    /* display: list-item; */
 }
 .itemSubImg{
     width: 90%;
     height: 90%;
     margin:5% 0 0 4%; 
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.searchBar{
+    background-color: rgb(248, 209, 158);
+    height: 20%;
+    border:none;
+    padding : 2px 3px;
 }
