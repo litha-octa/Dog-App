@@ -9,7 +9,7 @@ import Galeri from "./Screen/Galeri";
 class Main extends Component {
   render() {
     return (
-      <HashRouter>
+      <HashRouter onUpdate={() => window.scrollTo(0,0)}>
         <div>
           <div className="content">
             <Route exact path="/" component={Login} />
