@@ -50,7 +50,7 @@ function Galeri() {
       {imgSubRndm === 0 ? (
         <div></div>
       ) : (
-        <div className="imgSubRndm">
+        <div className="imgContainer">
           {imgSubRndm.map((i) => (
             <div className="columnMax" >
               <img src={i} className="itemSubImg" alt="Dog Pic Here" />
